@@ -1,0 +1,28 @@
+name: minna_study
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.4
+  flutter_tts: ^4.2.5
+  # 已刪除 audioplayers 以解決 Web 端 Format error 問題
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # 只保留確實存在的資料夾路徑
+  assets:
+    - lib/data/
